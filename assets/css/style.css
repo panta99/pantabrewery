@@ -328,7 +328,10 @@ footer h3{
     justify-content: space-evenly;
 }
 #slikaAutor{
-    width: initial;
+    height:500px !important;
+}
+#slikaAutor img{
+    height: 100%;
 }
 #tekstAutor{
     width: 48%;
