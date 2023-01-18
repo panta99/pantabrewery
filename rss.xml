@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+ <rss version="2.0">
+    <channel>
+        <item>
+            <title>New Beers</title>
+            <description>We added new beers.Check it out</description>
+            <link>link</link>
+        </item>
+        <item>
+            <title>Holiday Discount</title>
+            <description>Only for holidays, discount on all our beers!</description>
+            <link>link</link>
+        </item>
+    </channel>
+ </rss> 

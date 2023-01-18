@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Google Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans&family=M+PLUS+1+Code:wght@500;700&family=Nunito&display=swap" rel="stylesheet">
+    <!--FontAwesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!--CSS-->
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css"/>
+    <title>Panta Brewery | Contact</title>
+</head>
+<body>
+    <header class="container">
+        <div id="logo">
+            <h1 id="bname"><a href="index.html">Panta Brewery</a></h1>
+            <img src="assets/img/logo.png" alt="logo"/>
+        </div>
+        <nav id="menu">
+            <ul>
+                <a href="index.html"><li>Home</li></a>
+                <a href="prices.html"><li>Prices</li></a>
+                <a href="gallery.html"><li>Gallery</li></a>
+                <a href="contact.html"><li class="aktivni">Contact</li></a>
+                <a href="author.html"><li>Author</li></a>
+            </ul>
+        </nav>
+    </header>
+    <main id="maincontact" class="container">
+        <h1>Contact</h1>
+        <section id="formular">
+            <form action="contact.php" method="POST" id="forma">
+                <p class="label">First Name</p>
+                <input type="text" name="firstname" id="firstname"/>
+                <p class="label">Last Name</p>
+                <input type="text" name="lastname" id="lastname"/>
+                <p class="label">Email</p>
+                <input type="email" name="email" id="email"/>
+                <p class="label"></p>
+                <select name="birajte" id="biraj" id="ddl">
+                    <option value="0">Choose...</option>
+                    <option value="1">Question</option>
+                    <option value="2">Sugestion</option>
+                    <option value="3">Critique</option>
+                    <option value="4">Other...</option>
+                </select>
+                <p class="label">Your message</p>
+                <textarea name="txtArea" placeholder="Message" id="txtArea" cols="30" rows="8"></textarea>
+                <p class="label"></p>
+                <input type="submit" value="Submit" id="submit"/>
+            </form>
+        </section>
+        
+    </main>
+    <footer class="container">
+        <div id="footer1">
+                <div id="radnoVreme">
+                    <h4><i class="fa-regular fa-clock"></i>
+                        <p>Mon - Thur 09-23</p>
+                        <p>Fri - Sun 10-00</p>
+                    </h4>
+                </div>
+                <div id="lokacija">
+                    <h4>Location <i class="fa-solid fa-location-dot"></i>
+                        <p>Nemanjina 111 Beograd</p>
+                    </h4>
+                </div>
+                <div id="ikonice">
+                    <ul>
+                        <li><a href="https://www.facebook.com/"><i class="fa-brands fa-facebook"></i></a></li>
+                        <li><a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a></li>
+                        <li><a href="https://www.linkedin.com/"><i class="fa-brands fa-linkedin"></i></a></li>
+                        <li><a href="sitemap.xml"><i class="fa-solid fa-sitemap"></i></a></li>
+                        <li><a href="rss.xml"><i class="fa-solid fa-square-rss"></i></a></li>
+                    </ul>
+            </div>
+        </div> 
+       <h3>Copyright &copy; Aleksa Pantic 102/19</h3>
+    </footer>
+    
+</body>
+ </html>
