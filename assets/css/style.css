@@ -1,0 +1,455 @@
+:root{
+    --bela: #ffffff;
+    --crna: #000000;
+    --braon: #9C4A1A;
+    --tamzuta: #EC9704;
+    --zuta: #F7C815;
+    --krem: #583E26;
+    --libra: #A78B71;
+}
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans&family=M+PLUS+1+Code:wght@500;700&family=Nunito&display=swap');
+*{
+    margin:0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Fira Sans', sans-serif;
+}
+body{
+    display: block;
+    background-color: var(--krem);
+    font-size: 20px;
+}
+ul{
+    text-decoration: none;
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+.container{
+    width: 100%;
+    padding: 0px 205px;
+}
+header{
+    height: 70px !important;
+    height: initial;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    top: 0;
+    position: sticky;
+    background-color: var(--braon);
+    z-index: 999;
+}
+#logo{
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+@keyframes rotiranjeLoga{
+    from{ transform: rotate(0deg);}
+    to{transform: rotate(360deg);}
+}
+#logo img{
+    position: relative;
+    top: 25px;
+    margin-right: 20px;
+    animation-name: rotiranjeLoga;
+    animation-duration: 2s;
+}
+#bname{
+    color: var(--bela);
+    margin-right: 30px;
+    font-weight: bold;
+}
+#bname a{
+    color: var(--bela);
+}
+#bname a:hover{
+    color: var(--zuta);
+}
+#menu ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+#menu ul li{
+    margin: 0px 1px;
+    padding: 15px 25px;
+    height: 100%;
+    display: block;
+    font-weight: bold;
+    color: var(--bela);
+}
+#menu ul li:hover{
+    background-color: var(--zuta);
+    border-radius: 3px;
+    color: var(--crna) !important;
+}
+#cover-img{
+    position: relative;
+    background-image: url("../img/cover-image.jpg");
+    background-repeat: no-repeat;
+    background-position: bottom center;
+    height: 95vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+@keyframes pojavljivanje {
+    from{opacity: 0;}
+    to{opacity: 1;}
+}
+#coverText{
+    display: flex;
+    align-items: center;
+    width:fit-content;
+    height: 70px;
+    position: relative;
+    padding:60px 50px;
+    background-color: rgba(0,0,0,0.8);
+    border-radius: 5px;
+    animation-name: pojavljivanje;
+    animation-duration: 3s;
+}
+#coverText h1{
+    color: var(--bela);
+    text-align: center;
+}
+.custom-shape-divider-bottom-1673564171 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1673564171 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 70px;
+    transform: rotateY(180deg);
+}
+
+.custom-shape-divider-bottom-1673564171 .shape-fill {
+    fill: var(--krem);
+}
+#mainindex{
+    margin-top: 100px;
+    text-align: center;
+}
+#aboutus{
+    text-decoration: underline;
+    text-underline-offset: 15px;
+    color: var(--bela);
+    font-weight: bold;
+    font-size: 40px;
+    margin-top: -50px;
+    margin-bottom: 60px;
+}
+#pravljenje{
+    display: block;
+    width: 50%;
+    height: 50%;
+    overflow: hidden;
+}
+#pravljenje img{
+    width: 100%;
+    height: 100%;
+}
+.okrvirslike{
+    border: 3px solid white;
+    border-radius: 3px;
+}
+#sekPrvaIndex{
+    display: flex;
+    align-items: center;
+    margin-top: 30px;
+}
+#opisPivare{
+    color: var(--bela);
+    width:50%;
+    margin-left: 50px;
+}
+#products{
+    margin-top: 100px;
+    font-size: 40px;
+    color: var(--bela);
+    text-decoration: underline;
+    text-underline-offset: 15px;
+    margin-bottom: 60px;
+}
+#svetloPivo{
+    width:100%;
+    height: 100%;
+}
+.dflex{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.slikaPiva{
+    opacity: 0.6;
+    transition: 1s;
+    width: 50%;
+    height: 50%;
+}
+.slikaPiva:hover{
+    opacity: 1;
+    width: 50%;
+    height: 50%;
+}
+.slikaPiva img{
+    width:100%;
+    height: 100%;
+}
+.opisPiva{
+    color: var(--bela);
+    margin-left: 50px;
+    width: 50%;
+}
+#prvi{
+    height: 5000px;
+    background-color: red;
+}
+.opisPiva h2{
+    margin-bottom: 30px;
+}
+.opisPiva h2 i{
+    margin-right: 10px;
+}
+.opisPiva h3 p{
+    margin-top: 10px;
+}
+#tamnoPivo{
+    margin-top: 100px;
+}
+#tamnoPivo .opisPiva{
+    margin-right: 50px;
+}
+#psenicnoPivo{
+    margin-top: 100px;
+}
+#pricesLink{
+    margin-top: 70px;
+    margin-bottom: 50px;
+}
+#pricesLink a{
+    color: var(--bela) !important;
+}
+#pricesLink i{
+    color: var(--bela);
+    margin:0px 20px;
+}
+#pricesLink a:hover{
+    color: var(--crna) !important;
+}
+footer{
+    padding-top: 30px !important;
+    text-align: center;
+    background-color: var(--zuta);
+}
+footer h3{
+    font-size: 30px;
+    font-weight: bold !important;
+}
+#ikonice{
+    width:33%;
+}
+#ikonice ul{
+    margin-bottom: 20px;
+    font-size: 30px;
+    font-weight: bold;
+    justify-content:space-between;
+    display: flex;
+    flex-direction: row;
+}
+#ikonice ul li{
+    margin: 0px 20px;
+}
+#ikonice ul li a{
+    color: var(--crna);
+}
+#ikonice ul li a:hover{
+    color: #0000ff;
+}
+#radnoVreme{
+    display: flex;
+    align-items: center;
+    width:33%;
+    padding-top: 20px !important;
+}
+.aktivni{
+
+    border-radius: 3px;
+    color: var(--crna) !important;
+    background-color: rgba(247, 200, 21, 0.6);
+}
+#footer1{
+    display: flex;
+    justify-content: space-between !important;
+    align-items:center !important;
+}
+#lokacija{
+    width:33%;
+
+}
+#lokacija h4 i{
+    font-size: 30px;
+}
+#radnoVreme h4 i{
+    font-size: 30px;
+}
+#ikonice ul{
+    padding-inline-start: 0px !important;
+}
+#ikonice ul li:last-child{
+    margin-right:inherit !important;
+}
+#mainauthor{
+    animation-name: pojavljivanje;
+    animation-duration: 3s;
+    text-align: center;
+    margin: 100px 0px;
+}
+#mainauthor h1{
+    color: var(--bela);
+    text-decoration: underline;
+    text-underline-offset: 15px;
+}
+#opisAutora{
+    margin-top: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+#slikaAutor{
+    width: initial;
+}
+#tekstAutor{
+    width: 48%;
+    color: var(--bela);
+}
+#cenovnik table{
+    border: 3px solid var(--zuta);
+    background-color: rgba(0, 0, 0, 0.9);
+}
+#cenovnik table tr,#cenovnik table td{
+    border-bottom: 3px solid var(--zuta);
+    padding: 20px;
+}
+
+#mainprices{
+    background-image: url("../img/pricepic.jpg");
+    opacity: 0.9;
+    background-repeat: no-repeat;
+    background-position: center center;
+    width:100%;
+    height: fit-content;
+    color: var(--bela);
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 50px;
+}
+#mainprices h1{
+    font-size: 2em;
+    background-color: rgba(0,0,0,0.7);
+    height: 70px;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    text-decoration: underline;
+    text-underline-offset: 15px;
+}
+#galerija{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+#maingallery{
+    text-align: center;
+    margin-bottom: 100px;
+}
+#maingallery h1{
+    color: var(--bela);
+    text-decoration: underline;
+    text-underline-offset: 15px;
+    margin-top: 100px;
+    margin-bottom: 100px;
+
+}
+.slika{
+    border: 3px solid white;
+    border-radius: 3px;
+    margin-top: 20px;
+    width: 30%;
+    height: 30%;
+}
+.slika img{
+    opacity: 0.4;
+    width:100%;
+    height:100%;
+}
+.slika img:hover{
+    opacity: 1;
+}
+#maincontact{
+    text-align: center;
+}
+#maincontact h1{
+    color: var(--bela);
+    text-decoration: underline;
+    text-underline-offset: 15px;
+    margin: 100px 0px;
+}
+.label{
+    color: var(--bela);
+    font-size: 25px;
+    font-weight: bold;
+    margin-top: 20px;
+}
+#formular{
+    display: flex;
+    justify-content: center;
+    width:100%;
+    margin-bottom: 100px;
+}
+#forma{
+    padding-top: 20px;
+
+    width:40%;
+    border: 3px solid var(--crna);
+    border-radius: 3px;
+}
+#submit{
+    margin-bottom: 30px;
+    font-size: 20px;
+    padding: 10px;
+    background-color: var(--zuta);
+    font-weight: bold;
+}
+input[type=text],input[type=email]{
+    text-align: center;
+    width: 50%;
+    height: 30px;
+    font-size: 20px;
+    border: 3px solid var(--crna);
+}
+#biraj{
+    border: 3px solid var(--crna);
+    margin-top: 20px;
+    text-align: center;
+    font-size: 20px;
+    height: 30px;
+    width:50%;
+}
+#txtArea{
+    border: 3px solid var(--crna);
+    width:70% !important;
+    font-size: 20px;
+}
