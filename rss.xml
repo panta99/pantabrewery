@@ -4,12 +4,12 @@
         <item>
             <title>New Beers</title>
             <description>We added new beers.Check it out</description>
-            <link>link</link>
+            <link>https://panta99.github.io/pantabrewery/index.html</link>
         </item>
         <item>
             <title>Holiday Discount</title>
             <description>Only for holidays, discount on all our beers!</description>
-            <link>link</link>
+            <link>https://panta99.github.io/pantabrewery/prices.html</link>
         </item>
     </channel>
  </rss> 
