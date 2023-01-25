@@ -341,7 +341,7 @@ footer h3{
     border: 3px solid var(--zuta);
     background-color: rgba(0, 0, 0, 0.9);
 }
-#cenovnik table tr,#cenovnik table td{
+#cenovnik table tr,#cenovnik table td,#cenovnik table thead th{
     border-bottom: 3px solid var(--zuta);
     padding: 20px;
 }
